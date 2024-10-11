@@ -11,18 +11,17 @@
 
     <!-- Header Section -->
     <header>
-       <img src="cafe_logo.png" alt="fan_logo">
+        <img src="cafe_logo.png" alt="Fantasia's Cafe Logo">
         <h1>Contact Us</h1>
     </header>
 
-     <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact</a>
-    <a href="order.html" class="order-btn">Order Now</a>
-</nav>
-
-
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html" class="order-btn">Order Now</a>
+    </nav>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -30,9 +29,25 @@
         <p>Email: Fantasias_Cafe@gmail.com</p>
         <p>Phone: 📞 1 (708) 943-6124</p>
         <p>Address: 5834 Cermak Rd, Cicero, IL 60804</p>
-        
+
+        <form action="/submit" method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Fantasias Café. All rights reserved.</p>
         <a href="https://www.instagram.com/fantasia_cafe__/?hl=en" target="_blank">
